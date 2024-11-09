@@ -1,10 +1,9 @@
-import React from "react";
 import "./Footer.css";
 import Linkedin from "../../assets/Icons/Linkedin";
 import Gmail from "../../assets/Icons/Gmail";
 import Github from "../../assets/Icons/Github";
 import Whatsapp from "../../assets/Icons/Whatsapp";
-import { gmailLink, githubLink, whatsappLink, linkedinLink } from "../../helper/links"
+import { myLinks } from "../../helper/links";
 
 export default function Footer() {
   return (
@@ -24,22 +23,22 @@ export default function Footer() {
             </div>
             <div className="home-links">
               <div className="btn github">
-                <a href={githubLink}>
+                <a href={myLinks.github}>
                   <Github />
                 </a>
               </div>
               <div className="btn linkedin">
-                <a href={linkedinLink}>
+                <a href={myLinks.linkedin}>
                   <Linkedin />
                 </a>
               </div>
               <div className="btn gmail">
-                <a href={gmailLink}>
+                <a href={myLinks.gmail}>
                   <Gmail />
                 </a>
               </div>
               <div className="btn whatsapp">
-                <a href={whatsappLink}>
+                <a href={myLinks.whatsapp}>
                   <Whatsapp />
                 </a>
               </div>

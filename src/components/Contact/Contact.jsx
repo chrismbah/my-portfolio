@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Contact.css";
 import Plane from "../../assets/Icons/Plane";
-import { gmailLink } from "../../helper/links"
-
+import { myLinks } from "../../helper/links";
 export default function Contact() {
   return (
     <main id="contact">
@@ -25,7 +24,7 @@ export default function Contact() {
           </div>
         </div>
         <button className="contact-btn">
-          <a href={gmailLink}>
+          <a href={myLinks.gmail}>
             Send Message <Plane />
           </a>
         </button>

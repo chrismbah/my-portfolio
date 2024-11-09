@@ -7,7 +7,7 @@ import Gmail from "../../assets/Icons/Gmail";
 import Github from "../../assets/Icons/Github";
 import NavUp from "../../assets/Icons/NavUp";
 import { Typewriter } from "react-simple-typewriter";
-import { gmailLink, githubLink, linkedinLink } from "../../helper/links";
+import { myLinks } from "../../helper/links";
 import { motion } from "framer-motion";
 import { variants1, variants2, variants4 } from "../../animations/variants";
 import Lottie from "lottie-react";
@@ -78,7 +78,7 @@ export default function Home() {
             />
           </span>
 
-          <label className="cursor"></label>
+          <label className="cursor"> </label>
         </motion.h2>
         <motion.div
           variants={variants1}
@@ -103,7 +103,7 @@ export default function Home() {
             custom={7}
             className="btn github"
           >
-            <a href={githubLink}>
+            <a href={myLinks.github}>
               <Github />
             </a>
           </motion.div>
@@ -117,7 +117,7 @@ export default function Home() {
             custom={7.5}
             className="btn linkedin"
           >
-            <a href={linkedinLink}>
+            <a href={myLinks.linkedin}>
               <Linkedin />
             </a>
           </motion.div>
@@ -131,7 +131,7 @@ export default function Home() {
             custom={8}
             className="btn gmail"
           >
-            <a href={gmailLink}>
+            <a href={myLinks.gmail}>
               <Gmail />
             </a>
           </motion.div>

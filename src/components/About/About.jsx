@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import aboutImg from "../../assets/img/img1.jpg";
 import "./About.css";
-import { resumeLink, gmailLink } from "../../helper/links";
+import { myLinks } from "../../helper/links";
 import { motion } from "framer-motion";
 import { variants1, variants3 } from "../../animations/variants";
 
@@ -74,10 +74,10 @@ export default function About() {
                 good cup of coffee.
               </p>
               <p className="last">
-                <label>
-                  <a href={gmailLink}>Get in touch</a>
-                </label>
-                ,and let's create something amazing!
+                <span>
+                  <a href={myLinks.gmail}>Get in touch, </a>
+                </span>
+                and let's create something amazing!
               </p>
             </motion.div>
             <div className="about-contact">
@@ -91,7 +91,7 @@ export default function About() {
                 custom={5}
                 className="contact-btn"
               >
-                <a href={resumeLink}>View Resume</a>
+                <a href={myLinks.resume}>View Resume</a>
               </motion.button>
             </div>
           </div>

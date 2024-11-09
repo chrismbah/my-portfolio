@@ -2,6 +2,8 @@
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     gap: 2rem;
+    max-width: 1000px;
+    margin: auto
 }
 .project-card{
     position: relative;
@@ -37,6 +39,7 @@
 .project-info p{
     font-size: var(--p-font-small-1);
     font-weight: 500;
+    line-height: 1.8;
 }
 .project-icons a{
     color: initial;
