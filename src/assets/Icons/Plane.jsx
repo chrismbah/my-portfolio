@@ -1,7 +1,5 @@
-import React from 'react'
-
 export default function Plane() {
   return (
-    <i class="fa-regular fa-paper-plane"></i>
+    <i className="fa-regular fa-paper-plane"></i>
   )
 }

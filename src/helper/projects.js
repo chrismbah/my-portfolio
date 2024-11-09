@@ -31,20 +31,20 @@ export const projectInfo = [
     // liveLink: "https://taskr-app.vercel.app", // Update if you have a live link
     githubLink: "https://github.com/chrismbah/taskr-server", // Update if you have a repo link
   },
-  {
-    name: "Coin Pulse",
-    tools: ["JavaScript", "React Js", "CSS", "REST API"],
-    details:
-      "A cryptocurrency price tracker app enabling users to stay updated on real-time cryptocurrency prices, market cap, and other essential information.",
-    liveLink: "https://coin-pulse.vercel.app",
-    githubLink: "https://github.com/chrismbah/Coin-Pulse",
-  },
-  {
-    name: "Spend Smart",
-    tools: ["JavaScript", "React-Js", "TypeScript"],
-    details:
-      "A user-friendly expense tracker designed to help users manage their finances efficiently.",
-    liveLink: "https://spend-smart-nine.vercel.app",
-    githubLink: "https://github.com/chrismbah/Spend-Smart",
-  },
+  // {
+  //   name: "Coin Pulse",
+  //   tools: ["JavaScript", "React Js", "CSS", "REST API"],
+  //   details:
+  //     "A cryptocurrency price tracker app enabling users to stay updated on real-time cryptocurrency prices, market cap, and other essential information.",
+  //   liveLink: "https://coin-pulse.vercel.app",
+  //   githubLink: "https://github.com/chrismbah/Coin-Pulse",
+  // },
+  // {
+  //   name: "Spend Smart",
+  //   tools: ["JavaScript", "React-Js", "TypeScript"],
+  //   details:
+  //     "A user-friendly expense tracker designed to help users manage their finances efficiently.",
+  //   liveLink: "https://spend-smart-nine.vercel.app",
+  //   githubLink: "https://github.com/chrismbah/Spend-Smart",
+  // },
 ];

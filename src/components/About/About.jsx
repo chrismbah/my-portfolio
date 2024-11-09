@@ -58,10 +58,11 @@ export default function About() {
               className="info"
             >
               <p>
-                I'm a dedicated Software Engineer based in Owerri, Nigeria
-                experienced in JavaScript, TypeScript, React JS and various
-                frameworks and technologies passionate about creating innovative
-                solutions through code.
+                I'm a dedicated and experienced self-taught full-stack developer
+                based in Owerri, Nigeria, specializing in full-stack web
+                development with expertise in modern technologies and
+                frameworks. I’m passionate about building scalable and efficient
+                applications that enhance user experience and solve problems.
               </p>
               <p>
                 I collaborate with cross-functional teams to deliver
@@ -69,9 +70,9 @@ export default function About() {
                 expectations.
               </p>
               <p>
-                When I'm not coding, you can often find me playing chess,
-                watching anime (One Piece), reading manga or simply enjoying a
-                good cup of coffee.
+                When I'm not building, you can often find me playing chess,
+                reading books, watching anime (One Piece), reading manga or
+                simply enjoying a good cup of coffee.
               </p>
               <p className="last">
                 <span>
@@ -80,20 +81,20 @@ export default function About() {
                 and let's create something amazing!
               </p>
             </motion.div>
-            <div className="about-contact">
-              <motion.button
-                variants={variants3}
-                initial="initial"
-                whileInView="animate"
-                viewport={{
-                  once: true,
-                }}
-                custom={5}
-                className="contact-btn"
-              >
+            <motion.div
+              variants={variants3}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={5}
+              className="about-contact"
+            >
+              <button className="contact-btn">
                 <a href={myLinks.resume}>View Resume</a>
-              </motion.button>
-            </div>
+              </button>
+            </motion.div>
           </div>
         </div>
       </section>

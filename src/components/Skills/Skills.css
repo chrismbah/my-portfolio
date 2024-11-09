@@ -20,9 +20,21 @@
     border-radius: 5px;
     box-shadow: var(--box-shadow-3);
     transition: .1s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.skills-section{
+    margin: 20px 0;
+}
+.skills-section .section-title{
+    text-align: center;
+    font-size: var(--p-font-small-1);
 }
 .skills-info .icon:hover{
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 
 }
 .skills-info .tools,.skills-info .lang, .skills-info .frameworks{
@@ -30,7 +42,7 @@
 }
 
 .skills-info p{
-    font-size: .8rem;
+    font-size: .75rem;
     text-align: center;
 }
 .skills-info .lang, .skills-info .frameworks{
