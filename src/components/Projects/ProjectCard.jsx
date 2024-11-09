@@ -24,20 +24,20 @@ export default function ProjectCard({
         <p>{details}</p>
       </div>
       <div className="project-icons">
-        <div className="live">
+        {liveLink && <div className="live">
           <p>
             <a href={liveLink}>
               Live <Link />
             </a>
           </p>
-        </div>
-        <div className="github">
+        </div>}
+        {githubLink && <div className="github">
           <p>
             <a href={githubLink}>
               Code <Github />
             </a>
           </p>
-        </div>
+        </div>}
       </div>
     </div>
   );
