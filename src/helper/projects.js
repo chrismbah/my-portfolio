@@ -27,7 +27,7 @@ export const projectInfo = [
     name: "Taskr",
     tools: ["Express", "TypeScript", "MongoDB", "Jest", "Supertest"],
     details:
-      "Built a task management server app supporting task creation, updates, data handling, and automated reminders. Developed and executed unit and integration tests for high reliability and performance.",
+      "Built a task management server app with features for assign and control due dates of tasks, to avoid overlooking any of them. It supports task creation, updates, data handling, and automated reminders.",
     // liveLink: "https://taskr-app.vercel.app", // Update if you have a live link
     githubLink: "https://github.com/chrismbah/taskr-server", // Update if you have a repo link
   },
