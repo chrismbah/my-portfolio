@@ -12,7 +12,8 @@
 }
 .about-text p{
     margin-bottom: 10px;
-    font-size: var(--p-font-small-1);
+    font-size: var(--p-font-small-2);
+    line-height: 1.6;
 }
 .about-text .last{
     margin-bottom: 15px;
