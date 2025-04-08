@@ -1,11 +1,11 @@
 import Rating from "@/components/skills/rating";
-import { skillsInterface } from "@/config/skills";
+import { SkillsInterface } from "@/config/skills";
 
 interface SkillsCardProps {
-  skills: skillsInterface[];
+  skills: SkillsInterface[];
 }
 
-export default function SkillsCard({ skills }: SkillsCardProps) {
+export default function SkillsCard({ skills }: Readonly<SkillsCardProps>) {
   return (
     <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {skills.map((skill, id) => (
