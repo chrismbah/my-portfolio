@@ -37,7 +37,7 @@ const navItemVariants = {
   }),
 };
 
-export function MainNav({ items, children }: MainNavProps) {
+export function MainNav({ items, children }: Readonly<MainNavProps>) {
   const segment = useSelectedLayoutSegment();
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
   const pathname = usePathname();

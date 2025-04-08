@@ -3,7 +3,10 @@ interface PageHeaderProps {
   description: string;
 }
 
-export default function PageHeader({ title, description }: PageHeaderProps) {
+export default function PageHeader({
+  title,
+  description,
+}: Readonly<PageHeaderProps>) {
   return (
     <>
       <div className="flex flex-col mt-5 items-start gap-4 md:flex-row md:justify-between md:gap-8">
@@ -12,6 +15,12 @@ export default function PageHeader({ title, description }: PageHeaderProps) {
             {title}
           </h1>
           <p className="text-lg text-muted-foreground">{description}</p>
+          {title == "Experience" && (
+            <p className="-mt-2 text-left text-sm text-muted-foreground">
+             Note: Only public and showcase-ready projects are listed. Work under NDA
+              or still in development is excluded.
+            </p>
+          )}
         </div>
       </div>
       <hr className="my-6" />

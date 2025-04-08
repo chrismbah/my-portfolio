@@ -34,13 +34,15 @@ import {
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLaugh, BiSolidUser } from "react-icons/bi";
-import { BsInfoCircle, BsQuestionCircle } from "react-icons/bs";
+import { BsInfoCircle, BsQuestionCircle, BsTwitterX } from "react-icons/bs";
+import { FaHashnode, FaRegBookmark, FaTiktok } from "react-icons/fa6";
 import {
   HiBriefcase,
   HiOutlineExternalLink,
   HiOutlineLink,
 } from "react-icons/hi";
 import { IoIosGitBranch } from "react-icons/io";
+import { MdOutlineArticle } from "react-icons/md";
 import {
   SiAmazonaws,
   SiAngular,
@@ -59,16 +61,17 @@ import {
   SiNetlify,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostman,
   SiReact,
   SiRedux,
   SiSocketdotio,
   SiTailwindcss,
-  SiTwitter,
   SiTypescript,
 } from "react-icons/si";
-
 export const Icons = {
   contact: Phone,
+  article: FaRegBookmark,
+  bookOpen: MdOutlineArticle,
   gitRepoIcon: BookMarked,
   gitOrgBuilding: Building,
   gitBranch: IoIosGitBranch,
@@ -88,6 +91,7 @@ export const Icons = {
   user: User,
   arrowRight: ArrowRight,
   help: HelpCircle,
+
   pizza: Pizza,
   sun: SunMedium,
   moon: Moon,
@@ -96,6 +100,7 @@ export const Icons = {
   chevronDown: ChevronDown,
   laughEmoji: BiLaugh,
   check: Check,
+  hashnode: FaHashnode,
   infoMark: BsInfoCircle,
   questionMark: BsQuestionCircle,
   link: HiOutlineLink,
@@ -117,15 +122,17 @@ export const Icons = {
   nextjs: SiNextdotjs,
   nodejs: SiNodedotjs,
   react: SiReact,
+  postman: SiPostman,
   redux: SiRedux,
   socketio: SiSocketdotio,
   tailwindcss: SiTailwindcss,
   typescript: SiTypescript,
   gmail: SiGmail,
-  twitter: SiTwitter,
+  twitterX: BsTwitterX,
   linkedin: SiLinkedin,
   userFill: BiSolidUser,
   work: HiBriefcase,
+  tiktok: FaTiktok,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"
@@ -159,10 +166,10 @@ export const Icons = {
           className="tick"
           fill="none"
           stroke="currentColor"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
           d="M14 27l5.917 4.917L34 17"
         />
       </svg>

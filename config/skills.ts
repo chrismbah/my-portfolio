@@ -1,13 +1,13 @@
 import { Icons } from "@/components/common/icons";
 
-export interface skillsInterface {
+export interface SkillsInterface {
   name: string;
   description: string;
   rating: number;
   icon: any;
 }
 
-export const skillsUnsorted: skillsInterface[] = [
+export const skillsUnsorted: SkillsInterface[] = [
   {
     name: "Next.js",
     description:
@@ -86,18 +86,11 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.css3,
   },
   {
-    name: "React Native",
+    name: "Postman",
     description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
+      "Utilize API platform for building, testing, and documenting APIs with an intuitive interface.",
     rating: 4,
-    icon: Icons.react,
-  },
-  {
-    name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
-    rating: 3,
-    icon: Icons.angular,
+    icon: Icons.postman,
   },
   {
     name: "Redux",
@@ -128,20 +121,20 @@ export const skillsUnsorted: skillsInterface[] = [
     rating: 5,
     icon: Icons.tailwindcss,
   },
-  {
-    name: "AWS",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.amazonaws,
-  },
-  {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
-  },
+  // {
+  //   name: "AWS",
+  //   description:
+  //     "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
+  //   rating: 3,
+  //   icon: Icons.amazonaws,
+  // },
+  // {
+  //   name: "Bootstrap",
+  //   description:
+  //     "Quickly create responsive and appealing web designs using a popular CSS framework.",
+  //   rating: 2,
+  //   icon: Icons.bootstrap,
+  // },
   {
     name: "MySQL",
     description:

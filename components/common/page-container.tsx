@@ -12,12 +12,13 @@ export default function PageContainer({
   title,
   description,
   children,
-}: PageContainerProps) {
+}: Readonly<PageContainerProps>) {
   return (
     <ClientPageWrapper>
       <div>
         <PageHeader title={title} description={description} />
         <div className="mx-6">{children}</div>
+       
       </div>
     </ClientPageWrapper>
   );

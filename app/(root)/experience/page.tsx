@@ -34,6 +34,7 @@ export default function ExperiencePage() {
       title={pagesConfig.experience.title}
       description={pagesConfig.experience.description}
     >
+    
       <Tabs defaultValue="all" className="w-full">
         <TabsList className="conatiner grid max-w-[30rem] grid-cols-3">
           <TabsTrigger value="all">All</TabsTrigger>

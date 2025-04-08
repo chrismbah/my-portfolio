@@ -18,7 +18,7 @@ const norican = Norican({
   display: "swap",
 });
 
-export function MobileNav({ items, children }: MobileNavProps) {
+export function MobileNav({ items, children }: Readonly<MobileNavProps>) {
   useLockBody();
 
   return (

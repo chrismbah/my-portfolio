@@ -19,7 +19,12 @@ export type ValidSkills =
   | "AWS"
   | "Bootstrap"
   | "Google Auth"
-  | "MySQL";
+  | "MySQL"
+  | "Firebase"
+  | "ShadCN UI"
+  | "Sanity CMS"
+  | "OAuth"
+  | "Redis";
 
 export type ValidCategory =
   | "Full Stack"
@@ -27,8 +32,7 @@ export type ValidCategory =
   | "Backend"
   | "UI/UX"
   | "Web Dev"
-  | "Mobile Dev"
-  | "3D Modeling";
+  | "CMS";
 
 export type ValidExpType = "Personal Project" | "Professional";
 
@@ -37,5 +41,5 @@ export type ValidPages =
   | "skills"
   | "experience"
   | "contact"
-  | "contributions"
+  | "blog"
   | "resume";

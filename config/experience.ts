@@ -23,418 +23,296 @@ export interface ExperienceInterface {
   startDate: Date;
   endDate: Date;
   companyLogoImg: any;
+  companyLogoImg2?: any;
   descriptionDetails: DescriptionDetailsInterface;
-  pagesInfoArr: PagesInfoInterface[];
+  pagesInfoArr?: PagesInfoInterface[];
 }
 
 export const Experiences: ExperienceInterface[] = [
   {
-    id: "built-design",
-    companyName: "Builtdesign",
-    type: "Professional",
-    category: ["Web Dev", "Full Stack", "UI/UX"],
+    id: "pte-futo",
+    companyName: "PTE-FUTO",
+    type: "Personal Project",
+    category: ["Web Dev", "Full Stack"],
     shortDescription:
-      "Developed and optimized a high-performing website catering to over 4000 users, emphasizing efficiency and maintainability.",
-    websiteLink: "https://builtdesign.in",
-    techStack: [
-      "Next.js",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "GraphQL",
-      "Nest.js",
-      "Typescript",
-    ],
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/experience/builtdesign/logo.png",
+      "Built an E-learning platform serving 500+ students with centralized study resources, GPA calculator, and educational blog.",
+    websiteLink: "https://pte-futo.vercel.app/",
+    githubLink: "https://github.com/chrismbah/pte-futo",
+    techStack: ["React", "Typescript", "Firebase", "Tailwind CSS"],
+    startDate: new Date("2023-01-05"),
+    endDate: new Date("2024-03-18"),
+    companyLogoImg: "/experience/pte-futo/landing-0.png",
+    companyLogoImg2: "/experience/pte-futo/landing-1.png",
     pagesInfoArr: [
       {
         title: "Landing Page",
         description:
-          "Modern and responsive landing page showcasing company services and portfolio",
+          "Visually engaging and responsive landing page that introduces the platform’s features to new users.",
         imgArr: [
-          "/experience/builtdesign/landing_1.webp",
-          "/experience/builtdesign/landing_3.webp",
-          "/experience/builtdesign/landing_5.webp",
-          "/experience/builtdesign/landing_6.webp",
-          "/experience/builtdesign/landing_2.webp",
-          "/experience/builtdesign/landing_4.webp",
+          "/experience/pte-futo/landing-1.png",
+          "/experience/pte-futo/landing-2.png",
+          "/experience/pte-futo/landing-4.png",
         ],
       },
       {
-        title: "Custom PDF Reader and optimizer",
+        title: "Study Materials Dashboard",
         description:
-          "Specialized PDF viewer with optimization features for improved performance and user experience",
-        imgArr: ["/experience/builtdesign/pdf_opt.webp"],
+          "Central hub offering 100+ course materials, 30+ textbooks, and 50+ past questions for streamlined academic access.",
+        imgArr: ["/experience/pte-futo/landing-3.png"],
       },
       {
-        title: "Clients Dashboard",
+        title: "GPA Calculator & Blog",
         description:
-          "Comprehensive client portal with project tracking, document management, and communication tools",
+          "Interactive GPA calculator and an educational blog aimed at improving student learning and engagement.",
         imgArr: [
-          "/experience/builtdesign/cli_dashboard_1.webp",
-          "/experience/builtdesign/cli_dashboard_2.webp",
-          "/experience/builtdesign/cli_dashboard_3.webp",
+          "/experience/pte-futo/gpa.png",
+          "/experience/pte-futo/blog.png",
         ],
-      },
-      {
-        title: "Admin Dashboard",
-        description:
-          "Powerful administrative interface for managing users, projects, and system settings",
-        imgArr: ["/experience/builtdesign/logo.png"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "During my time at Builtdesign, I had the opportunity to work on a dynamic and user-focused project that involved designing and optimizing a website catering to a user base of over 4000 individuals. My role as a full-stack web developer was to ensure a seamless experience for users by creating an efficient and maintainable platform.",
-        "I collaborated closely with the product team to integrate cutting-edge features, employing technologies like Next.js and React with TypeScript for captivating front-end experiences. Additionally, I contributed significantly to the backend by utilizing Node.js, MongoDB, and GraphQL to design robust APIs and ensure smooth system functionality.",
-        "This experience allowed me to enhance my skills in various areas of web development and deliver a high-quality product. I gained proficiency in front-end technologies such as Material UI and Tailwind CSS, as well as backend technologies including Nest.js and MySQL. The project's success in catering to a large user base and providing an intuitive user interface has further motivated me to pursue excellence in web development.",
+        "PTE-FUTO is a department-specific learning platform I built to centralize all academic resources for students in Polymer and Textile Engineering. It serves over 500 active users and includes study materials, textbooks, past questions, a GPA calculator, and an educational blog.",
+        "The platform was developed using React, TypeScript, and Firebase, ensuring real-time updates, efficient data handling, and seamless user experience across devices.",
+        "This project significantly improved study habits and academic engagement in the department by making learning materials easily accessible.",
       ],
       bullets: [
-        "Developed and optimized a high-performing website catering to over 4000 users.",
-        "Collaborated closely with the product team to implement cutting-edge features.",
-        "Created an intuitive admin dashboard to efficiently manage and announce contest winners.",
-        "Leveraged Next.js, React with TypeScript for captivating front-end experiences.",
-        "Utilized Node.js, MongoDB, and GraphQL to design and manage databases.",
+        "Built an E-learning web app with React, TypeScript, and Firebase, supporting 500+ active users.",
+        "Centralized 100+ course materials, 50+ past questions, and 30+ textbooks into one platform.",
+        "Created a GPA calculator tool to help students track academic performance.",
+        "Established a department-specific blog to enhance learning and community engagement.",
+        "Optimized the app for fast load times and seamless cross-device compatibility.",
       ],
     },
   },
   {
-    id: "the-super-quotes",
-    companyName: "The Super Quotes",
+    id: "chronoscribe",
+    companyName: "ChronoScribe",
+    type: "Personal Project",
+    category: ["Web Dev", "Full Stack"],
+    shortDescription:
+      "Built a full-featured blog platform with secure authentication and role-based post management.",
+    techStack: ["React", "Node.js", "express.js", "MySQL"],
+    githubLink: "https://github.com/chrismbah/chronoscribe",
+    startDate: new Date("2024-06-01"),
+    endDate: new Date("2024-06-14"),
+    companyLogoImg: "/experience/chronoscribe/logo.png",
+    pagesInfoArr: [
+      {
+        title: "Home & Blog Feed",
+        description:
+          "Dynamic landing page showing latest posts and categories. Fully responsive across devices.",
+        imgArr: ["/experience/chronoscribe/home.png"],
+      },
+      {
+        title: "Authentication & User Roles",
+        description:
+          "JWT-secured login, registration, and role-based access to create, edit, and delete posts.",
+        imgArr: ["/experience/chronoscribe/auth.png"],
+      },
+      {
+        title: "Post Editor",
+        description:
+          "Rich text editor for users to publish and manage their blog posts.",
+        imgArr: ["/experience/chronoscribe/editor.png"],
+      },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "ChronoScribe is a full-featured blog platform built using the MERN stack (React, Node.js, Express, MySQL). It supports authenticated users to create, edit, and manage blog posts securely.",
+        "The app uses JWT-based authentication to restrict access, ensuring only authorized users can perform critical actions. It features a responsive UI and a MySQL-backed API to handle content management robustly.",
+      ],
+      bullets: [
+        "Designed and implemented a full-stack blogging platform using React.js and Express.",
+        "Used MySQL for relational data storage and implemented secure JWT-based authentication.",
+        "Built RESTful APIs to support post creation, editing, and deletion with role-based access control.",
+        "Focused on responsiveness and clean UI/UX to ensure seamless experience across devices.",
+      ],
+    },
+  },
+  {
+    id: "mida-ai",
+    companyName: "Mida Digitals",
     type: "Professional",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
+    category: ["Web Dev", "UI/UX", "Frontend"],
     shortDescription:
-      "Elevated The Super Quotes app with JavaScript, React Native, APIs, Redux magic, and Google Play Store debut.",
-    websiteLink:
-      "https://play.google.com/store/apps/details?id=com.thesuperlife",
-    techStack: ["React Native", "Node.js", "MongoDB", "Javascript"],
-    startDate: new Date("2021-07-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/experience/superquotes/logo.png",
+      "Designed and developed the landing page for Mida Digitals' upcoming AI Agents service, enhancing user engagement and providing a comprehensive overview of AI-driven business solutions.",
+    websiteLink: "https://www.midadigitals.com/ai-agents",
+    techStack: ["React", "Typescript", "Next.js", "ShadCN UI"],
+    startDate: new Date("2025-02-10"),
+    endDate: new Date("2025-02-12"),
+    companyLogoImg: "/experience/mida/logo.png",
     pagesInfoArr: [
       {
-        title: "Quotes View Page",
+        title: "AI Agents Landing Page",
         description:
-          "Elegantly designed quotes display with customizable themes and sharing options",
-        imgArr: ["/experience/superquotes/app_2.webp"],
-      },
-      {
-        title: "Quotes Download Component",
-        description:
-          "Feature allowing users to download quotes as beautiful images for social media sharing",
+          "A visually engaging and informative landing page introducing Mida Digitals' AI Agents services, designed to captivate and inform potential clients.",
         imgArr: [
-          "/experience/superquotes/app_4.webp",
-          "/experience/superquotes/app_7.webp",
+          "/experience/mida/landing_1.png",
+          "/experience/mida/landing_2.png",
+          "/experience/mida/landing_3.png",
         ],
-      },
-      {
-        title: "Account Management",
-        description:
-          "User profile management with favorites, history, and personalization settings",
-        imgArr: ["/experience/superquotes/app_6.webp"],
-      },
-      {
-        title: "Interest Selection and Update Page",
-        description:
-          "Interactive interface for users to select and update their quote preferences and interests",
-        imgArr: [
-          "/experience/superquotes/app_1.webp",
-          "/experience/superquotes/app_3.webp",
-        ],
-      },
-      {
-        title: "Responsiveness",
-        description:
-          "Adaptive design ensuring optimal user experience across various device sizes and orientations",
-        imgArr: ["/experience/superquotes/app_5.webp"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        `Venturing into the world of creativity at The Super Quotes was an exhilarating journey. As a passionate developer, I led the charge in crafting a compelling application from inception to completion, using the dynamic duo of JavaScript and React Native.`,
-        `The heart of my achievement lay in the seamless integration of APIs, threading a tapestry of data flow that propelled the application's functionality to new heights.`,
-        `With the wizardry of Redux, I choreographed a symphony of state management and performance optimization, orchestrating a ballet of responsiveness that wowed users with every interaction.`,
-        `A crescendo awaited as I unveiled the culmination of my work on the grand stage of the Google Play Store. The app's debut marked an epoch, opening doors to an expansive audience eager to embrace the charm of The Super Quotes.`,
+        "Collaborated with Mida Digitals to create a dedicated landing page for their forthcoming AI Agents service, aiming to showcase the transformative potential of AI in business operations.",
+        "The project involved close coordination with Mida's team to understand their vision and translate it into a user-friendly and aesthetically pleasing web interface, utilizing Next JS and ShadCN UI for responsive design and optimal performance.",
+        "This landing page serves as a strategic tool to generate interest and inform potential clients about the capabilities and benefits of integrating AI Agents into their business processes.",
       ],
       bullets: [
-        "Led the end-to-end development of a captivating application using JavaScript and React Native.",
-        "Championed the integration of APIs, harmonizing data flow and enhancing application functionality.",
-        "Conducted Redux magic to ensure state management and optimize performance, delivering a mesmerizing user experience.",
-        "Premiered the application on the Google Play Store, capturing hearts and expanding its user base.",
+        "Developed a responsive and dynamic landing page to promote Mida Digitals' AI Agents service.",
+        "Employed React and Tailwind CSS to ensure a modern and seamless user experience across devices.",
+        "Worked closely with Mida's team to align the design and content with their branding and strategic objectives.",
+        "Integrated interactive elements to enhance user engagement and effectively communicate the value proposition of AI Agents.",
       ],
     },
   },
   {
-    id: "apex-shopping",
-    companyName: "Apex Shopping App",
-    type: "Personal Project",
-    category: ["Mobile Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
-    githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
-    techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
-    startDate: new Date("2021-07-14"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/experience/apex/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Splash Screen",
-        description: "Custom animated splash screen with app branding",
-        imgArr: ["/experience/apex/app_7.webp"],
-      },
-      {
-        title: "Login/Signup Authentication",
-        description: "Secure user authentication system with Firebase",
-        imgArr: ["/experience/apex/app_1.webp"],
-      },
-      {
-        title: "All Products Explore Screen",
-        description: "Interactive product browsing with categories and filters",
-        imgArr: ["/experience/apex/app_3.webp"],
-      },
-      {
-        title: "Admin Panel",
-        description:
-          "Comprehensive admin dashboard for product and order management",
-        imgArr: ["/experience/apex/app_4.webp", "/experience/apex/app_6.webp"],
-      },
-      {
-        title: "Sidenav Navigation",
-        description: "Intuitive side navigation for easy app navigation",
-        imgArr: ["/experience/apex/app_5.webp"],
-      },
-      {
-        title: "Firebase Database",
-        description:
-          "Real-time database structure for efficient data management",
-        imgArr: ["/experience/apex/db.webp"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "The Apex Shopping App represents a comprehensive mobile e-commerce solution that I developed from the ground up using React Native and Firebase. This project showcases my ability to create a full-featured shopping application with both user and admin functionalities.",
-        "The application features a robust authentication system, allowing users to securely sign up and log in. The product exploration interface is designed with user experience in mind, incorporating smooth navigation and intuitive filtering options.",
-        "One of the key highlights is the admin panel, which provides complete control over product management, order processing, and inventory tracking. The integration with Firebase ensures real-time data synchronization and reliable data persistence.",
-        "The app's architecture emphasizes scalability and performance, utilizing Redux for state management and following best practices for mobile app development. The UI/UX design focuses on providing a seamless shopping experience across different device sizes.",
-      ],
-      bullets: [
-        "Implemented secure user authentication and authorization using Firebase",
-        "Designed and developed an intuitive product browsing and shopping cart system",
-        "Created a comprehensive admin panel for product and order management",
-        "Integrated real-time data synchronization using Firebase Database",
-        "Implemented state management using Redux for optimal performance",
-        "Designed responsive UI components following mobile-first principles",
-        "Incorporated smooth animations and transitions for enhanced user experience",
-      ],
-    },
-  },
-  {
-    id: "builtdesign-blogs",
-    companyName: "Builtdesign Blogs",
+    id: "butterfliex-trading-platform",
+    companyName: "ButterFliex",
     type: "Professional",
-    category: ["Web Dev", "Full Stack", "UI/UX"],
+    category: ["Web Dev", "Frontend"],
     shortDescription:
-      "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
-    websiteLink: "https://blog.builtdesign.in",
-    techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/experience/builtdesign-blogs/logo.png",
+      "Developed the client side of a cryptocurrency trading platform for seamless conversion between crypto and multiple fiat currencies.",
+    websiteLink: "https://butterfliex-web-app.vercel.app/",
+    techStack: ["React", "Material UI", "Typescript"],
+    startDate: new Date("2024-04-08"),
+    endDate: new Date("2024-07-08"),
+    companyLogoImg: "/experience/butterfliex/logo.png",
     pagesInfoArr: [
       {
-        title: "Blog Landing Page",
+        title: "User Registration Page",
         description:
-          "Modern and responsive landing page showcasing featured articles",
-        imgArr: ["/experience/builtdesign-blogs/blog_2.webp"],
+          "Secure and user-friendly registration interface enabling users to create accounts effortlessly.",
+        imgArr: ["/experience/butterfliex/register.png"],
       },
       {
-        title: "Blog Listing",
+        title: "User Login Page",
         description:
-          "Organized display of all blog posts with search and filtering",
-        imgArr: ["/experience/builtdesign-blogs/blog_3.webp"],
+          "Streamlined login page with robust authentication mechanisms for user security.",
+        imgArr: ["/experience/butterfliex/login.png"],
       },
+    ],
+    descriptionDetails: {
+      paragraphs: [
+        "Worked with the ButterFliex team to build a scalable and intuitive cryptocurrency trading platform that allows users to buy, sell, and convert crypto assets into multiple fiat currencies.",
+        "The platform was architected with React on the frontend and Node.js with Express.js on the backend, integrated with a secure MongoDB database for handling user and transaction data.",
+        "The goal was to provide a frictionless, real-time trading experience with security, speed, and scalability at the core.",
+      ],
+      bullets: [
+        "Designed the frontend of a trading web platform supporting crypto-to-flat conversions across multiple currencies.",
+        "Designed and implemented user registration, login, and authentication flows.",
+        "Integrated real-time crypto pricing and streamlined trading functionality.",
+        "Built a sleek, mobile-friendly UI using React and Material UI.",
+      ],
+    },
+  },
+  {
+    id: "henry-navigator",
+    companyName: "Henry Navigator",
+    type: "Professional",
+    category: ["Web Dev", "Frontend", "CMS"],
+    shortDescription:
+      "Designed and developed a real-estate web platform where users can explore real estate and construction projects, view project details, and get real-time pricing information.",
+    websiteLink: "https://henrynavigator.com",
+    techStack: ["Sanity CMS", "Next.js", "Typescript"],
+    startDate: new Date("2025-08-08"),
+    endDate: new Date("2025-08-22"),
+    companyLogoImg: "/experience/henry-navigator/logo.png",
+    pagesInfoArr: [
       {
-        title: "Category Navigation",
-        description: "Intuitive category-based navigation system",
-        imgArr: ["/experience/builtdesign-blogs/blog_1.webp"],
-      },
-      {
-        title: "Article View",
+        title: "Landing Page",
         description:
-          "Clean and readable article layout with rich media support",
+          "A clean and modern landing page showcasing the available projects and pricing.",
         imgArr: [
-          "/experience/builtdesign-blogs/blog_4.webp",
-          "/experience/builtdesign-blogs/blog_5.webp",
+          "/experience/henry-navigator/landing_1.png",
+          "/experience/henry-navigator/landing_2.png",
+          "/experience/henry-navigator/landing_3.png",
         ],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "As part of the Builtdesign platform, I developed a sophisticated blog website that serves as a content hub for the company's thought leadership and industry insights. The project leveraged Next.js and React to create a fast, SEO-friendly platform.",
-        "The blog platform features a modern, responsive design that prioritizes readability and user engagement. I implemented a robust content management system using Netlify CMS, enabling the content team to easily publish and manage blog posts.",
-        "The architecture includes server-side rendering for optimal performance and SEO, while MongoDB provides flexible content storage. TypeScript ensures code reliability and maintainability throughout the application.",
-        "Key features include category-based navigation, search functionality, and a rich text editor for content creation. The platform supports various content types including images, code snippets, and embedded media.",
+        "Henry Navigator is a platform that allows users to explore various real estate and construction projects, providing comprehensive pricing information to help in decision-making. The platform aims to streamline the process of exploring available projects and getting real-time pricing data.",
+        "The website is designed to offer a user-friendly experience, ensuring visitors can easily access the information they need.",
       ],
       bullets: [
-        "Developed a modern blog platform using Next.js and React with TypeScript",
-        "Implemented Netlify CMS for efficient content management",
-        "Created a responsive design that prioritizes readability and user engagement",
-        "Built server-side rendering for optimal performance and SEO",
-        "Integrated MongoDB for flexible content storage and management",
-        "Developed category-based navigation and search functionality",
-        "Implemented rich text editing capabilities for content creation",
+        "Developed a real estate platform that showcases available projects and their pricing.",
+        "Integrated real-time pricing information for better user decision-making.",
+        "Created a responsive and modern landing page for project displays.",
       ],
     },
   },
   {
-    id: "portfolio-card",
-    companyName: "Portfolio Card",
+    id: "collabo-server",
+    companyName: "Collabo Server",
     type: "Personal Project",
-    category: ["Web Dev", "Frontend", "3D Modeling"],
+    category: ["Web Dev", "Backend"],
     shortDescription:
-      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/experience/card/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Card Views",
-        description: "Front and back views of the interactive 3D card",
-        imgArr: [
-          "/experience/card/card_2.webp",
-          "/experience/card/card_3.webp",
-        ],
-      },
-      {
-        title: "Interactive Elements",
-        description:
-          "Custom links embedded in the 3D model with interactive animations",
-        imgArr: ["/experience/card/card_1.webp"],
-      },
-      {
-        title: "3D Model Development",
-        description: "Blender project showcasing the model creation process",
-        imgArr: ["/experience/card/card_4.webp"],
-      },
+      "Developed a chat platform server with real-time messaging, and mutual chat request system.",
+    githubLink: "https://github.com/chrismbah/chatflow-server",
+    techStack: [
+      "Node.js",
+      "express.js",
+      "MongoDB",
+      "Typescript",
+      "Socket.io",
+      "OAuth",
+      "Redis",
     ],
+    startDate: new Date("2025-04-01"),
+    endDate: new Date(),
+    companyLogoImg: "/experience/collabo/logo.png",
     descriptionDetails: {
       paragraphs: [
-        "In my personal project, I've ventured into the world of creativity, fashioning a distinctive portfolio card through the utilization of Three.js.",
-        "This portfolio card transcends convention; it emerges as a captivating 3D model, adorned with meticulous lighting arrangements that conjure a spellbinding visual journey.",
-        "To materialize this concept, I've harnessed the combined potential of Three.js and Blender, orchestrating a meticulous crafting of the central 3D model that serves as the cornerstone of the card's allure.",
-        "Yet, the allure extends beyond aesthetics. I've ingeniously interwoven custom links directly into the fabric of Three.js components. Through the creation and seamless integration of novel components, these additions elegantly rest upon the card's surface, mirroring its rotations and delivering an interactive dimension to my portfolio.",
-        "The portfolio card itself is an opus of motion, perpetually swaying in an auto-rotational dance that unfurls its multifaceted essence. As an enhancement, I've introduced an instinctive user interaction element. A simple, intuitive drag of the card in specific directions grants viewers a comprehensive vantage, enabling exploration from every conceivable angle.",
-        "At its core, my personal project epitomizes technical finesse, artistic expression, and interactive design. The amalgamation of Three.js, Blender's prowess, and the innovation of component integration has birthed not only a portfolio card, but a dynamic encounter leaving an indelible imprint on all who partake.",
+        "Collabo is a  chat platform designed to foster meaningful collaboration between users and developers. This backend powers all the real-time communication, user authentication, and matching logic.",
+        "The architecture is built with scalability and modularity in mind—leveraging Node.js and Express for APIs, MongoDB for data persistence, Redis for caching sessions, and Socket.io for real-time features.",
+        "Authentication is handled through Google OAuth, and chat requests are only allowed between mutually consenting users, adding a layer of privacy and intent to conversations.",
       ],
       bullets: [
-        "Conceptualized and realized a distinct portfolio card using Three.js, highlighting creative exploration.",
-        "Crafted a mesmerizing 3D model enhanced by thoughtful lighting arrangements, resulting in a captivating visual voyage.",
-        "Leveraged the synergy of Three.js and Blender to meticulously sculpt and refine the central 3D model, embodying meticulous attention to detail.",
-        "Innovatively integrated custom links within Three.js components, introducing an interactive layer via seamlessly incorporated new elements.",
-        "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
-        "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
-        "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
+        "Built RESTful API endpoints for user, chat, and message management using Express and TypeScript.",
+        "Integrated Google OAuth for secure and exclusive developer access.",
+        "Implemented real-time messaging using WebSockets with custom events and room management.",
+        "Designed a mutual chat request system to ensure meaningful developer connections.",
+        "Structured the project using clean architecture principles for maintainability and scalability.",
       ],
     },
   },
   {
-    id: "cirql-dashboard",
-    companyName: "Cirql Dashboard",
+    id: "reely",
+    companyName: "Reely!",
     type: "Personal Project",
-    category: ["Web Dev", "Frontend", "UI/UX"],
+    category: ["Web Dev", "Frontend"],
     shortDescription:
-      "Created a dashboard project using React and Tailwind CSS, focusing on UI design and routing implementation.",
-    websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
-    techStack: ["React", "Tailwind CSS", "Google Auth"],
-    startDate: new Date("2023-01-01"),
-    endDate: new Date("2023-02-15"),
-    companyLogoImg: "/experience/cirql/logo.png",
+      "Designed an Instagram Reels-inspired interface featuring smooth vertical scrolling and immersive video playback experience.",
+    websiteLink: "https://reely-eight.vercel.app/",
+    githubLink: "https://github.com/chrismbah/reely",
+    techStack: ["React", "Next.js", "Typescript", "Tailwind CSS"],
+    startDate: new Date("2025-02-10"),
+    endDate: new Date("2025-02-12"),
+    companyLogoImg: "/experience/reely/logo.png",
     pagesInfoArr: [
       {
-        title: "Dashboard Home",
+        title: "Reel Viewer",
         description:
-          "Main dashboard view with analytics widgets and data visualization",
-        imgArr: ["/experience/cirql/web_1.png", "/experience/cirql/web_2.png"],
-      },
-      {
-        title: "Profile Page",
-        description:
-          "User profile management interface with customization options",
-        imgArr: ["/experience/cirql/web_3.png", "/experience/cirql/web_4.png"],
+          "An Instagram Reels-style video feed with smooth vertical scrolling, auto-play, and responsive layout optimized for both desktop and mobile.",
+        imgArr: ["/experience/reely/reel-1.png"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "For the 'Cirql Dashboard' personal project, I aimed to enhance my UI design skills and deepen my understanding of routing within a React application.",
-        "I utilized React and Tailwind CSS to craft an intuitive dashboard interface that provides users with an organized overview of data and functionalities. The UI components were thoughtfully designed to ensure a seamless user experience.",
-        "Incorporating Google Sign-In Authentication further fortified the project by adding a layer of security and convenience. Users are required to authenticate before accessing certain routes, ensuring the safety of sensitive information.",
-        "The routing system was meticulously implemented to enable smooth navigation between different sections of the dashboard, simulating real-world use cases.",
-        "Through this project, I've gained valuable insights into UI/UX design principles and the implementation of secure and efficient routing in React applications.",
+        "Reely! is a client-side project inspired by Instagram Reels, developed during a coding interview to demonstrate smooth UI interactions and responsive design. The interface provides a scrollable vertical video feed that mimics the Reels experience.",
+        "Though the project was part of an interview process, it was built with clean architecture, performance in mind, and a focus on smooth transitions and full-device responsiveness.",
       ],
       bullets: [
-        "Created a user-friendly dashboard project using React and Tailwind CSS.",
-        "Implemented Google Sign-In Authentication to ensure secure access to sensitive routes.",
-        "Designed UI components to provide an intuitive and visually pleasing experience.",
-        "Focused on implementing a smooth routing system to simulate real-world use cases.",
-        "Enhanced my skills in UI design, routing, and component architecture.",
-      ],
-    },
-  },
-  {
-    id: "inscript-hindi-typing",
-    companyName: "Inscript Hindi Typing",
-    type: "Personal Project",
-    category: ["Web Dev", "UI/UX"],
-    shortDescription:
-      "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
-    techStack: ["HTML 5", "CSS 3", "Javascript"],
-    startDate: new Date("2022-05-01"),
-    endDate: new Date("2022-06-15"),
-    companyLogoImg: "/experience/hindi-keyboard/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Typing Interface",
-        description: "Minimal and user-friendly Inscript Hindi typing area",
-        imgArr: ["/experience/hindi-keyboard/web_1.png"],
-      },
-      {
-        title: "Copy and Download the file",
-        description:
-          "Export functionality allowing users to copy text or download as a document file",
-        imgArr: [
-          "/experience/hindi-keyboard/web_2.png",
-          "/experience/hindi-keyboard/web_3.png",
-        ],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
-        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
-        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
-        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
-        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
-        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
-      ],
-      bullets: [
-        "Developed a user-friendly website for Inscript Hindi typing.",
-        "Catered to the needs of Hindi writers in digital news and media.",
-        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
-        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
-        "Utilized HTML and CSS to design a user-friendly UI.",
-        "Implemented Local Storage to enable users to save and retrieve their work.",
-        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
-        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
+        "Designed and built a Reels-style video feed with smooth vertical scrolling transitions.",
+        "Implemented responsive UI that adapts seamlessly to different device sizes and orientations.",
+        "Focused on immersive user experience with auto-playing and snapping scroll behavior.",
+        "Built using React, Next.js, TypeScript, and Tailwind CSS for speed and consistency.",
       ],
     },
   },
 ];
 
-export const featuredExperiences = Experiences.slice(0, 3);
+export const featuredExperiences = Experiences.slice(0, 6);

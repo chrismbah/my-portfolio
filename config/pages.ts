@@ -8,7 +8,6 @@ type PagesConfig = {
       title: string;
       description: string;
     };
-    // featuredDescription: string;
   };
 };
 
@@ -18,7 +17,7 @@ export const pagesConfig: PagesConfig = {
     description: "Welcome to my portfolio website.",
     metadata: {
       title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      description: "Christian Mbah's portfolio website.",
     },
   },
   skills: {
@@ -27,7 +26,7 @@ export const pagesConfig: PagesConfig = {
     metadata: {
       title: "Skills",
       description:
-        "Naman Barkiya's key skills that define his professional identity.",
+        "Christian Mbah's key skills that define his professional identity.",
     },
   },
   experience: {
@@ -35,7 +34,7 @@ export const pagesConfig: PagesConfig = {
     description: "Highlighting career journey and impactful projects.",
     metadata: {
       title: "Experience",
-      description: "Naman Barkiya's experience in building web applications.",
+      description: "Christian Mbah's experience in building web applications.",
     },
   },
   contact: {
@@ -43,24 +42,24 @@ export const pagesConfig: PagesConfig = {
     description: "Let's connect and explore collaborations.",
     metadata: {
       title: "Contact",
-      description: "Contact Naman Barkiya.",
+      description: "Contact Christian Mbah.",
     },
   },
-  contributions: {
-    title: "Contributions",
-    description: "Open-source contributions and community involvement.",
+  blog: {
+    title: "Blog",
+    description: "My tech write-ups, tutorials, and insights.",
     metadata: {
-      title: "Contributions",
+      title: "Blog",
       description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+        "Christian Mbah's technical articles, tutorials, and development insights.",
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description: "Christian Mbah's resume.",
     metadata: {
       title: "Resume",
-      description: "Naman Barkiya's resume.",
+      description: "Christian Mbah's resume.",
     },
   },
 };
