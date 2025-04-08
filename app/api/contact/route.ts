@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, message, social, email } = body;
 
-    const res = await fetch(
+    await fetch(
       `${formLink}/formResponse?${fieldIdName}=${name}&${fieldIdEmail}=${email}&${fieldIdMessage}=${message}&${fieldIdSocial}=${social}`
     );
 

@@ -16,12 +16,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button, buttonVariants } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import { featuredBlog } from "@/config/blog";
 import { featuredExperiences } from "@/config/experience";
 import { pagesConfig } from "@/config/pages";
@@ -69,15 +63,16 @@ export default function IndexPage() {
             <AccordionItem value="main-ques" className="flex-1">
               <AccordionTrigger>
                 <p className="flex items-center">
-                  Can you guess my first programming language?
+                  What kind of projects do you work on?
                 </p>
               </AccordionTrigger>
-              <AccordionContent>
-                Java
-                <Icons.laughEmoji className="w-4 h-5 md:w-5 ml-2" />
+              <AccordionContent className="text-left">
+                I build modern web applications, mostly using React, TypeScript,
+                Next.js and Express Js. I enjoy both frontend and backend
+                development.
               </AccordionContent>
             </AccordionItem>
-            <DropdownMenu>
+            {/* <DropdownMenu>
               <DropdownMenuTrigger asChild className="cursor-pointer">
                 <Icons.questionMark className="w-5 h-5 ml-3 text-muted-foreground " />
               </DropdownMenuTrigger>
@@ -87,7 +82,7 @@ export default function IndexPage() {
                   Hint: Everyone hates it lol
                 </DropdownMenuLabel>
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
           </Accordion>
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
