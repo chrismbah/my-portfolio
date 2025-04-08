@@ -42,7 +42,6 @@ export const Experiences: ExperienceInterface[] = [
     startDate: new Date("2023-01-05"),
     endDate: new Date("2024-03-18"),
     companyLogoImg: "/experience/pte-futo/landing-0.png",
-    companyLogoImg2: "/experience/pte-futo/landing-1.png",
     pagesInfoArr: [
       {
         title: "Landing Page",
