@@ -71,9 +71,9 @@ export const Experiences: ExperienceInterface[] = [
     ],
     descriptionDetails: {
       paragraphs: [
-        "PTE-FUTO is a department-specific learning platform I built to centralize all academic resources for students in Polymer and Textile Engineering. It serves over 500 active users and includes study materials, textbooks, past questions, a GPA calculator, and an educational blog.",
-        "The platform was developed using React, TypeScript, and Firebase, ensuring real-time updates, efficient data handling, and seamless user experience across devices.",
-        "This project significantly improved study habits and academic engagement in the department by making learning materials easily accessible.",
+        "PTE-FUTO is a department-specific learning platform I built to centralize all academic resources for students in Polymer and Textile Engineering in the Federal University of Technology, Owerri. It serves over 500 active users and includes study materials, textbooks, past questions, a GPA calculator, and an educational blog.",
+        "The platform was developed using React, TypeScript, and Firebase, ensuring efficient data handling, and seamless user experience across all devices.",
+        "This project aimed to significantly improved study habits and academic engagement in the department by making learning materials easily accessible.",
       ],
       bullets: [
         "Built an E-learning web app with React, TypeScript, and Firebase, supporting 500+ active users.",
@@ -96,26 +96,6 @@ export const Experiences: ExperienceInterface[] = [
     startDate: new Date("2024-06-01"),
     endDate: new Date("2024-06-14"),
     companyLogoImg: "/experience/chronoscribe/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Home & Blog Feed",
-        description:
-          "Dynamic landing page showing latest posts and categories. Fully responsive across devices.",
-        imgArr: ["/experience/chronoscribe/home.png"],
-      },
-      {
-        title: "Authentication & User Roles",
-        description:
-          "JWT-secured login, registration, and role-based access to create, edit, and delete posts.",
-        imgArr: ["/experience/chronoscribe/auth.png"],
-      },
-      {
-        title: "Post Editor",
-        description:
-          "Rich text editor for users to publish and manage their blog posts.",
-        imgArr: ["/experience/chronoscribe/editor.png"],
-      },
-    ],
     descriptionDetails: {
       paragraphs: [
         "ChronoScribe is a full-featured blog platform built using the MERN stack (React, Node.js, Express, MySQL). It supports authenticated users to create, edit, and manage blog posts securely.",
@@ -161,7 +141,7 @@ export const Experiences: ExperienceInterface[] = [
       ],
       bullets: [
         "Developed a responsive and dynamic landing page to promote Mida Digitals' AI Agents service.",
-        "Employed React and Tailwind CSS to ensure a modern and seamless user experience across devices.",
+        "Employed Next JS and ShadCN to ensure a modern and seamless user experience across devices.",
         "Worked closely with Mida's team to align the design and content with their branding and strategic objectives.",
         "Integrated interactive elements to enhance user engagement and effectively communicate the value proposition of AI Agents.",
       ],
@@ -234,11 +214,12 @@ export const Experiences: ExperienceInterface[] = [
     descriptionDetails: {
       paragraphs: [
         "Henry Navigator is a platform that allows users to explore various real estate and construction projects, providing comprehensive pricing information to help in decision-making. The platform aims to streamline the process of exploring available projects and getting real-time pricing data.",
-        "The website is designed to offer a user-friendly experience, ensuring visitors can easily access the information they need.",
+        "The website is designed to offer a user-friendly experience, ensuring visitors can easily access the information on real estate listings they need.",
       ],
       bullets: [
         "Developed a real estate platform that showcases available projects and their pricing.",
         "Integrated real-time pricing information for better user decision-making.",
+        "Utilized Sanity Content Management Systen (CMS) to store and manage real estate data",
         "Created a responsive and modern landing page for project displays.",
       ],
     },
