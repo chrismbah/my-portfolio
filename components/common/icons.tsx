@@ -2,6 +2,7 @@ import {
   AlertTriangle,
   ArrowRight,
   BookMarked,
+  BookOpen,
   Building,
   Check,
   ChevronDown,
@@ -42,7 +43,7 @@ import {
   HiOutlineLink,
 } from "react-icons/hi";
 import { IoIosGitBranch } from "react-icons/io";
-import { MdOutlineArticle } from "react-icons/md";
+
 import {
   SiAmazonaws,
   SiAngular,
@@ -71,7 +72,7 @@ import {
 export const Icons = {
   contact: Phone,
   article: FaRegBookmark,
-  bookOpen: MdOutlineArticle,
+  bookOpen: BookOpen,
   gitRepoIcon: BookMarked,
   gitOrgBuilding: Building,
   gitBranch: IoIosGitBranch,

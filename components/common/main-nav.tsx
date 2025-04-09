@@ -47,7 +47,7 @@ export function MainNav({ items, children }: Readonly<MainNavProps>) {
   }, [pathname]);
 
   return (
-    <div className="flex gap-6 md:gap-10">
+    <div className="flex md:gap-10">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

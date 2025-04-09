@@ -1,9 +1,8 @@
-import { Metadata } from "next";
-
 import PageContainer from "@/components/common/page-container";
-import GithubRedirectCard from "@/components/contact/github-redirect-card";
+import { LetsConnectCard } from "@/components/contact/lets-connect-card";
 import { ContactForm } from "@/components/forms/contact-form";
 import { pagesConfig } from "@/config/pages";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: pagesConfig.contact.metadata.title,
@@ -21,7 +20,7 @@ export default function ContactPage() {
           <ContactForm />
         </div>
         <div className="flex-1 flex justify-center ">
-          <GithubRedirectCard />
+          <LetsConnectCard />
         </div>
       </div>
     </PageContainer>

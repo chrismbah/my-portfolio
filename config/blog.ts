@@ -36,4 +36,4 @@ export const blogUnsorted: BlogInterface[] = [
   },
 ];
 
-export const featuredBlog: BlogInterface[] = blogUnsorted.slice(0, 4);
+export const featuredBlog: BlogInterface[] = blogUnsorted.slice(0, 3);

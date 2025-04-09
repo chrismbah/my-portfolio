@@ -16,7 +16,7 @@ export default function BlogCard({ blog }: Readonly<BlogCardProps>) {
             {/* Article Header */}
             <div className="mb-3 flex items-start justify-between">
               <div className="flex items-center gap-2">
-                <Icons.article size={20} />
+                <Icons.bookOpen size={25} />
                 <h3 className="font-semibold line-clamp-1">{article.title}</h3>
               </div>
             </div>

@@ -12,9 +12,14 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem", // default padding
+        sm: "1rem", // smaller padding on small screens
+        lg: "2rem", // optional: medium screens and up
+        xl: "3rem", // optional: bigger screens
+      },
       screens: {
-        "2xl": "1400px",
+        "2xl": "1400px", // custom container max-width for 2xl
       },
     },
     extend: {

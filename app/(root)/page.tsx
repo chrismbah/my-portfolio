@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-import ArticleCard from "@/components/blog/blog-card";
+import BlogCard from "@/components/blog/blog-card";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function IndexPage() {
   return (
     <ClientPageWrapper>
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-40 h-screen flex items-center">
+      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-44 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-8">
           <Image
             src={chrisImg}
@@ -53,7 +53,7 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Full Stack Developer
+            Full Stack Developer | Software Engineer
           </AnimatedText>{" "}
           <Accordion
             type="single"
@@ -61,28 +61,14 @@ export default function IndexPage() {
             className="flex items-center w-full max-w-[35rem]"
           >
             <AccordionItem value="main-ques" className="flex-1">
-              <AccordionTrigger>
-                <p className="flex items-center">
-                  What kind of projects do you work on?
-                </p>
+              <AccordionTrigger className="text-xs sm:text-sm">
+                What kind of projects do you work on?
               </AccordionTrigger>
-              <AccordionContent className="text-left">
-                I build modern web applications, mostly using React, TypeScript,
-                Next.js and Express Js. I enjoy both frontend and backend
-                development.
+              <AccordionContent className="text-left text-[10px] sm:text-xs">
+                I build full stack web applications, mostly using React,
+                TypeScript, Next.js, Express Js and MongoDB.
               </AccordionContent>
             </AccordionItem>
-            {/* <DropdownMenu>
-              <DropdownMenuTrigger asChild className="cursor-pointer">
-                <Icons.questionMark className="w-5 h-5 ml-3 text-muted-foreground " />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
-                <DropdownMenuLabel className="flex items-center text-muted-foreground">
-                  <Icons.infoMark className="w-4 h-4 mr-2" />
-                  Hint: Everyone hates it lol
-                </DropdownMenuLabel>
-              </DropdownMenuContent>
-            </DropdownMenu> */}
           </Accordion>
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
@@ -202,7 +188,7 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
         <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
-          <ArticleCard blog={featuredBlog} />
+          <BlogCard blog={featuredBlog} />
         </div>
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/blog">
